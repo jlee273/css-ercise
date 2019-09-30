@@ -1,2 +1,3 @@
 # css-ercise
-only for practice
+CSS Animation
+
