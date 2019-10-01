@@ -5,16 +5,65 @@ width:50px;height:50px;background: Crimson ;margin: 100px auto;border-radius:50%
 
 outline: 1px solid transparent;
 
-animation:circle 2s 1s infinite alternate;	
+animation-name:moving;
+animation-duration: 2s;
+animation-iteration-count: infinite
+animation: drop 1s infinite;
 }
 
-@keyframes circle {
+@keyframes moving {
+  0% {
+    transform: translateY(0px);
+    background-color: #00BEE3;
+  }
+  100% {
+    transform: translateY(100px);
+  	background-color: #D71855;
+  }
+}
+
+@keyframes moving {
 	 0%  {border-radius:20% 30% 20% 0;width:50px;height:50px;background: DarkRed;}
 	 30% {border-radius:0 30% 40% 30%;width:100px;height:100px; background: coral ;}
 	 60% {border-radius:40% 0 40% 50% ;width:150px;height:150px;background: pink; }
 	 100% {border-radius:50% 50% 0 50%;background: lightblue;width:200px;height:200px;}
 }
 
-@keyframes circle { 
-    from {opacity:0;} 
-    to {opacity:1;} 
+ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #D71855;
+  animation: bounce 0.8s infinite;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateY(0px);
+    background-color: #D71855;
+  }
+  15% {
+    transform: translateY(-100px);
+    background-color: #900E37;
+  }
+  30% {
+    transform: translateY(0px);
+    background-color: #D71855;
+  }
+  45% {
+    transform: translateY(-60px);
+    background-color: #B01244;
+  }
+  60% {
+    transform: translateY(0px);
+    background-color: #D71855;
+  }
+  75% {
+    transform: translateY(-20px);
+    background-color: #C5164E;
+  }
+  100% {
+    transform: translateY(0px);
+    background-color: #D71855;
+  }
+}
