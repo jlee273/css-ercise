@@ -1,3 +1,0 @@
-# css-ercise
-CSS Animation
-
