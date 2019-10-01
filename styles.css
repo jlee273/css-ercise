@@ -14,3 +14,7 @@ animation:circle 2s 1s infinite alternate;
 	 60% {border-radius:40% 0 40% 50% ;width:150px;height:150px;background: pink; }
 	 100% {border-radius:50% 50% 0 50%;background: lightblue;width:200px;height:200px;}
 }
+
+@keyframes circle { 
+    from {opacity:0;} 
+    to {opacity:1;} 
