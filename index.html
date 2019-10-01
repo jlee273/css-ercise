@@ -1,0 +1,24 @@
+<body>
+	<div class="box"></div>
+</body>
+
+
+-css-
+*{margin: 0;padding:0;}
+
+.box{
+width:50px;height:50px;background: Crimson ;margin: 100px auto;border-radius:50%;
+
+outline: 1px solid transparent;
+
+animation:circle 2s 1s infinite alternate;	
+
+
+}
+
+@keyframes circle {
+	 0%  {border-radius:20% 30% 20% 0;width:50px;height:50px;background: DarkRed;}
+	 30% {border-radius:0 30% 40% 30%;width:100px;height:100px; background: coral ;}
+	 60% {border-radius:40% 0 40% 50% ;width:150px;height:150px;background: pink; }
+	 100% {border-radius:50% 50% 0 50%;background: lightblue;width:200px;height:200px;}
+}
